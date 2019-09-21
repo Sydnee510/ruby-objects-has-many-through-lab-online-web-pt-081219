@@ -12,5 +12,9 @@ class Patient
     Appointment.all.select {|appointment| appointment.patient == self}
   end
   def doctors 
+     def genres                      
+    self.songs.collect do |song|    
+      song.genre
+    end
   end
 end 
