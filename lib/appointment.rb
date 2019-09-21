@@ -1,6 +1,5 @@
 class Appoinment 
-  attr_accessor :name
-  def initialize(name)
-    @name = name 
+  attr_accessor 
+  def initialize
 end 
 end
