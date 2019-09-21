@@ -6,8 +6,11 @@ class Appointment
     @patient = patient 
     @doctor = doctor
     @@all << self
-end 
-def self.all 
+  end 
+  def self.all 
   @@all 
-end
+  end
+  def patient 
+    @patient 
+  end
 end
