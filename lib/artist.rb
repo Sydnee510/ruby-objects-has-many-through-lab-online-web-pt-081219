@@ -15,8 +15,8 @@ class Artist
     # @songs << song
     #song.artist = self
     # Artist.new(@name)
-      @songs << name
-      name.artist = self
+      #@songs << name
+      #name.artist = self
   end 
   def genres                      
     self.songs.collect do |song|    
