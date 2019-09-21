@@ -12,8 +12,7 @@ class Patient
     Appointment.all.select {|appointment| appointment.patient == self}
   end
   def doctors 
-     def genres                      
-    self.appointment.collect do |appointment|    
+    self.appointments.collect do |appointment|    
       appointment.doctor
     end
   end
