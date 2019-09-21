@@ -16,4 +16,5 @@ class Doctor
       appointment.patient
     end
 end 
+def 
 end
