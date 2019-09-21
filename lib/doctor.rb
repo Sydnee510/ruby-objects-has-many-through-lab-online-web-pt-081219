@@ -3,4 +3,9 @@ class Doctor
   def initialize(name)
     @name = name 
   end 
+  def patients 
+    self.patients.collect do |patient|    
+      patient.appointments
+    end
 end 
+end
