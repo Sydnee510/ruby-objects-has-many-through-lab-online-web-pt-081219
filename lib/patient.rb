@@ -8,25 +8,9 @@ class Patient
   def self.all 
     @@all
   end
-  # def songs 
-  #   Song.all.select {|song| song.genre == self}
-  # end
-  # def artists 
-  #   self.songs.collect do |song|    
-  #     song.artist
-  #   end
-  # end
   def appointments 
     Appointment.all.select {|appointment| appointment.patient == self}
   end
-  # def appointments
-   # Appointment.all.select {|appointment| appointment.doctor == self}
-  # end
-  # def patients 
-  #   appointments.collect do |appointment|    
-  #     appointment.patient
-  #   end
-  # end
   def doctors 
     self.appointments.collect do |appointment|    
       appointment.doctor
